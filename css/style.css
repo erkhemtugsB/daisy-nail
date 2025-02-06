@@ -383,7 +383,7 @@ a[href*='tel'], a[href*='mailto'] {
 		bottom: 0;
 		top: 0;
 		width: 100%;
-		background: url("../images/home-3-1-974x626.jpg");
+		background: url("../images/hero-cover.png");
 		background-size: cover;
 	}
 	.block-img-aside img {
