@@ -4104,12 +4104,22 @@ textarea.form-input {
 	color: #151515;
 }
 
+.quote-modern-caption svg{
+	height: 200px;
+}
+.quote-modern-caption h4{
+	font-size: 50px;
+	padding-bottom:25px;
+}
+
 .quote-modern-caption .quote-modern-title {
 	text-transform: capitalize;
 }
 
 .quote-modern-caption > * + .big {
-	margin-top: 5px;
+	margin-top: 25px;
+	font-size: 25px;
+	color: #9b9b9b;
 }
 
 .quote-modern-caption * + .quote-modern-title {
@@ -10821,7 +10831,6 @@ yx-axis
 .owl-carousel .owl-stage-outer {
 	position: relative;
 	overflow: hidden;
-	padding-top: 20px;
 	/* fix for flashing background */
 	-webkit-transform: translate3d(0px, 0px, 0px);
 }
