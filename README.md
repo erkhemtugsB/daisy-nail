@@ -1,2 +1,2 @@
 # nailsalon.github.io
-Nail Salon
+for Daisy Nails
