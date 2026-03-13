@@ -162,6 +162,9 @@ h1,
 	}
 }
 
+	.block-img-aside img {
+		display: none;
+	}
 h3,
 .heading-3 {
 	font-size: 24px;
@@ -374,7 +377,7 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .block-img-aside {
-	overflow: hidden;
+	overflow: visible;
 }
 
 @media (min-width: 992px) {
@@ -388,6 +391,178 @@ a[href*='tel'], a[href*='mailto'] {
 	}
 	.block-img-aside img {
 		display: none;
+	}
+}
+
+/* Japanese Head Massage */
+.massage-section {
+	position: relative;
+	background-image: linear-gradient(135deg, rgba(253, 238, 241, 0.92) 0%, rgba(255, 216, 203, 0.88) 60%, rgba(249, 192, 198, 0.84) 100%), url("../images/cherry-blossom.png");
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	color: #4c2a2a;
+	border-radius: 32px;
+	margin-inline: 16px;
+	box-shadow: 0 25px 60px rgba(226, 170, 170, 0.35);
+	border: 1px solid rgba(219, 148, 148, 0.4);
+	overflow: hidden;
+}
+
+.massage-section .container {
+	position: relative;
+}
+
+.massage-section h2,
+.massage-section p,
+.massage-section span,
+.massage-section strong {
+	color: inherit;
+}
+
+.massage-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 2.5rem;
+	align-items: center;
+}
+
+.massage-copy {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.massage-heading {
+	font-family: "Mercury", "Playfair Display", cursive;
+	font-size: 3.6rem;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+	color: #8b494f;
+}
+
+.massage-overline {
+	font-size: 0.85rem;
+	letter-spacing: 0.3em;
+	text-transform: uppercase;
+	color: #b5646b;
+	margin-bottom: -0.5rem;
+}
+
+.massage-description {
+	font-size: 1.05rem;
+	color: #6b3b40;
+	max-width: 32rem;
+}
+
+.massage-offer-card {
+	background: rgba(255, 255, 255, 0.6);
+	border: 1px solid rgba(255, 255, 255, 0.9);
+	border-radius: 24px;
+	padding: 1rem 1.5rem;
+	max-width: 20rem;
+	box-shadow: 0 10px 25px rgba(255, 175, 180, 0.35);
+}
+
+.massage-offer-label {
+	display: block;
+	font-size: 0.85rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #af4e5b;
+}
+
+.massage-details {
+	display: flex;
+	flex-direction: column;
+	gap: 1.75rem;
+}
+
+.massage-note {
+	font-size: 1rem;
+	line-height: 1.7;
+	color: #5d353a;
+	background: rgba(255, 255, 255, 0.65);
+	border-radius: 18px;
+	padding: 1rem 1.25rem;
+	border: 1px solid rgba(255, 255, 255, 0.85);
+}
+
+.massage-session-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 1rem;
+}
+
+.massage-session-card {
+	background: rgba(255, 255, 255, 0.75);
+	border-radius: 20px;
+	padding: 1.2rem 1.3rem;
+	border: 1px solid rgba(255, 255, 255, 0.9);
+	box-shadow: 0 10px 25px rgba(251, 184, 184, 0.35);
+}
+
+.massage-session-label {
+	font-size: 0.95rem;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 0.2rem;
+}
+
+.massage-session-duration {
+	margin-bottom: 0.6rem;
+	color: #6b3b40;
+}
+
+.massage-price {
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #c15363;
+}
+
+.massage-footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+	background: rgba(255, 255, 255, 0.8);
+	border-radius: 16px;
+	padding: 1rem 1.5rem;
+	border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.massage-footer-label {
+	font-weight: 600;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	margin-bottom: 0.3rem;
+	color: #b5646b;
+}
+
+.massage-footer-note {
+	margin: 0;
+	color: #6b3b40;
+}
+
+.massage-phone {
+	font-weight: 700;
+	color: #c15363;
+}
+
+@media (max-width: 767px) {
+	.massage-section {
+		margin-inline: 0;
+		border-radius: 0;
+	}
+	.massage-offer-card,
+	.massage-footer {
+		max-width: none;
+	}
+	.massage-heading {
+		font-size: 2.8rem;
 	}
 }
 
